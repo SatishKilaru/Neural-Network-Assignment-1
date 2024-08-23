@@ -1,0 +1,12 @@
+with open('Test.txt', 'r') as file:
+    lines = file.readlines()
+    l=[]
+    for li in lines:
+      for i in li.split(" "):
+        l.append(i)
+    lis=[]
+    for i in l:
+      if i not in lis:
+        print(i,":",l.count(i))
+      lis.append(i)
+
