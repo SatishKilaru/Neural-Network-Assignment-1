@@ -1,0 +1,13 @@
+def string_alternative(Full_name):
+  str1=''
+  for i in range(len(Full_name)):
+    if(i%2==0):
+      str1=str1+Full_name[i]
+  return str1
+def fullname(First_name,Last_name):
+  Full_name=First_name+" "+Last_name
+  print(Full_name)
+  return string_alternative(Full_name)
+a=input(str("enter first name"))
+b=input(str("enter last name"))
+print(fullname(a,b))
